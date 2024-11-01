@@ -1,6 +1,6 @@
 <?php
-require_once 'classes/Plugin.php';
-require_once 'classes/ERDiagram.php';
+require_once('./classes/Plugin.php');
+require_once('./plugins/DBDesigner/classes/ERDiagram.php');
 
 
 class DBDesigner extends Plugin {
@@ -137,7 +137,7 @@ class DBDesigner extends Plugin {
 	 * Add plugin in the tabs
 	 * @param $plugin_functions_parameters
 	 */
-	function add_plugin_tabs(&$plugin_functions_parameters) {
+	function add_plugin_tabs($plugin_functions_parameters) {
 
 		$tabs = &$plugin_functions_parameters['tabs'];
 
@@ -535,7 +535,7 @@ class DBDesigner extends Plugin {
 				<th class="data left"><?php echo $this->_('strgroups'); ?></th>
 				<td class="data1">
 					<?php while (!$groups->EOF){
-						echo htmlspecialchars($groups2->fields['groname']);
+						echo htmlspecialchars($groups->fields['groname']);
 						$groups->moveNext();
 						if(!$groups->EOF) echo ', ';
 					}?>

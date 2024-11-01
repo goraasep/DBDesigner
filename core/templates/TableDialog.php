@@ -6,12 +6,12 @@
 			<input class="focusable" type="text" id="table-dialog_table-name" maxlength="<?php echo $data->_maxNameLen; ?>" />
 			<div class="clear"></div>
 		</div>
-		<div class="field-check">
+		<!-- <div class="field-check">
 			<span class="label"><?php echo $this->_('stroptions'); ?></span>
 			<label for="table-dialog_withoutoids">WITHOUT OIDS</label>
 			<input type="checkbox" id="table-dialog_withoutoids" checked="checked" />
 			<div class="clear"></div>
-		</div>
+		</div> -->
 		<div class="field-textarea">
 			<label class="label" for="table-dialog_table-comment"><?php echo $this->_('strcomment'); ?></label>
 			<textarea id="table-dialog_table-comment"></textarea>

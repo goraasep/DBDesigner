@@ -2,7 +2,7 @@
 	include_once 'ToolBar.php';
 	include_once 'ObjectDetail.php';
 	include_once 'TableDialog.php';
-	include_once 'Table.php';
+	include_once 'TableHeader.php';
 	include_once 'ColumnDialog.php';
 	include_once 'ForeignKeyDialog.php';
 	include_once 'UniqueKeyDialog.php';
