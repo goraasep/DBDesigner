@@ -1,8 +1,16 @@
-Database designer plugin for phpPgAdmin
-=======================================
+# Database designer plugin for phpPgAdmin
 
-Installation
-------------
+I haven't fully tested it yet, but this fork works for PostgreSQL 17 and [phpPgAdmin fork by ReimuHakurei](https://github.com/ReimuHakurei/phpPgAdmin).
+
+Here’s what I did to fix this plugin:
+
+- Fixed some typos that caused the plugin not to run.
+- Changed some queries regarding OIDs, since PostgreSQL 12+ doesn't support OIDs.
+- Renamed Table.php to TableHeader.php to resolve conflicts with php/pear/Table.php.
+
+How to operate this plugin is explained in this [video](https://www.youtube.com/watch?v=J9tIl3zB9Ro).
+
+## Installation
 
 1. You need a copy of the latest phpPgAdmin version on github.
 
