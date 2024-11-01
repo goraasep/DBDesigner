@@ -8,6 +8,10 @@ Here’s what I did to fix this plugin:
 - Changed some queries regarding OIDs, since PostgreSQL 12+ doesn't support OIDs.
 - Renamed Table.php to TableHeader.php to resolve conflicts with php/pear/Table.php.
 
+Additional Feature:
+
+- Capture diagram image.
+
 How to operate this plugin is explained in this [video](https://www.youtube.com/watch?v=J9tIl3zB9Ro).
 
 ## Installation
