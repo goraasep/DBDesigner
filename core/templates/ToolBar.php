@@ -31,6 +31,9 @@
 			<li>
 				<a href="#" class="button align-tables ui-state-default ui-corner-all" title="<?php echo $this->_('straligntables'); ?>"><span><?php echo $this->_('straligntables'); ?></span></a>
 			</li>
+			<li>
+				<a href="#" class="button screenshot-tables ui-state-default ui-corner-all" onclick="takeScreenshot()" title="Capture (Unselect table before capturing)"><span>Capture</span></a>
+			</li>
 		</ul>
 		<div class="clear"></div>
 	</div>

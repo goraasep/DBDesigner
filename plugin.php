@@ -738,7 +738,19 @@ class DBDesigner extends Plugin {
 		}
 
 		$scripts .= '<link rel="stylesheet" type="text/css" href="plugins/' . $this->name . '/css/dbdesigner.css" />';
+		$scripts .= '<link rel="stylesheet" type="text/css" href="plugins/' . $this->name . '/css/custom.css" />';
 		$scripts .= '<script type="text/javascript" src="plugins/' . $this->name . '/js/dbdesigner.js"></script>';
+		$scripts .= '<script type="text/javascript" src="plugins/' . $this->name . '/js/html2canvas.min.js"></script>';
+		$scripts .= '<script>
+						function takeScreenshot() {
+							html2canvas(document.querySelector("#canvas")).then(canvas => {
+								const link = document.createElement(\'a\');
+								link.href = canvas.toDataURL("image/png");
+								link.download = \'capture.png\';
+								link.click();
+							});
+						}
+					</script>';
 
 		ob_start(); ?>
 			<script type="text/javascript">
